@@ -1,15 +1,20 @@
-# Modulo de Servicios Web - SOAP
+# Modulo de Servicios Web
 
-## Operaciones WSDL
-- GetProductos - Obtener lista
-- - CreateProducto - Crear nuevo
-  - - UpdateProducto - Actualizar
-   
-    - ## Ventajas SOAP
-    - 1. Protocolo estandarizado
-      2. 2. Seguridad WS-Security
-         3. 3. Contrato formal WSDL
-           
-            4. ## Nota
-            5. Este archivo fue creado en main para simular un conflicto de merge con la rama feature/servicios-web
-            6. 
+## Decision: REST seleccionado tras analisis comparativo
+
+## Comparativa REST vs SOAP
+
+| Caracteristica | REST | SOAP |
+|---|---|---|
+| Formato | JSON | XML |
+| Rendimiento | Alto | Medio |
+| Complejidad | Baja | Alta |
+
+## Endpoints REST Implementados
+- GET /api/productos - Lista de productos
+- - POST /api/productos - Crear producto
+- - PUT /api/productos/{id} - Actualizar producto
+- - DELETE /api/productos/{id} - Eliminar producto
+
+## Conclusion
+Se selecciona REST por mayor rendimiento e interoperabilidad en la arquitectura empresarial.
