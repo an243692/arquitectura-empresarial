@@ -1,20 +1,20 @@
-# Modulo de Servicios Web - REST
+# Modulo de Servicios Web
 
-## Endpoints Definidos
+## Decision: REST seleccionado tras analisis comparativo
+
+## Comparativa REST vs SOAP
+
+| Caracteristica | REST | SOAP |
+|---|---|---|
+| Formato | JSON | XML |
+| Rendimiento | Alto | Medio |
+| Complejidad | Baja | Alta |
+
+## Endpoints REST Implementados
 - GET /api/productos - Lista de productos
 - - POST /api/productos - Crear producto
-  - - PUT /api/productos/{id} - Actualizar producto
-    - - DELETE /api/productos/{id} - Eliminar producto
-     
-      - ## Ventajas REST
-      - 1. Menor consumo de ancho de banda (JSON vs XML)
-        2. 2. Mayor compatibilidad con navegadores modernos
-           3. 3. Facilidad de integracion con frameworks frontend
-             
-              4. ## Formato de Respuesta JSON
-              5. {
-              6.   "status": "success",
-              7.     "data": {},
-              8.   "message": "Operacion exitosa"
-              9.   }
-              10.   
+- - PUT /api/productos/{id} - Actualizar producto
+- - DELETE /api/productos/{id} - Eliminar producto
+
+## Conclusion
+Se selecciona REST por mayor rendimiento e interoperabilidad en la arquitectura empresarial.
